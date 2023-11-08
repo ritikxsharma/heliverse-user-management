@@ -1,4 +1,5 @@
 const initialState = {
+    loading: false,
     users: [],
     searchQuery: '',
     genderFilter: 'All',
@@ -11,6 +12,11 @@ const initialState = {
 
 const userReducer = (state = initialState, action) =>{
     switch(action.type){
+        case 'SET_LOADING':
+            return{
+                ...state,
+                loading: action.payload
+            }
         case 'SET_USERS':
             return{
                 ...state,

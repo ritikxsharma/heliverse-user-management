@@ -2,7 +2,7 @@ import axios_api from "../axios/axios";
 
 const getUsers = async() => {
     try{
-        const response = await axios_api.get(`/`)
+        const response = await axios_api.get(`/api/users`)
         return response
     }catch(error){
         return error

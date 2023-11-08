@@ -3,8 +3,6 @@ import React from 'react'
 
 const UserCard = ({user, onClick}) => {
 
-  console.log(user.available);
-
   const handleCardClick = () =>{
     if(onClick){
       onClick(user)
